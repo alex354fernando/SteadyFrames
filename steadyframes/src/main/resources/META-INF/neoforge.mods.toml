@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "steadyframes"
+version = "1.0.0"
+displayName = "Steady Frames"
+description = '''
+Distancia de render adaptativa para mantener frametimes estables.
+Sin mixins: coexiste con Sodium, ImmediatelyFast, ModernFix y similares.
+'''
+
+[[dependencies.steadyframes]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.steadyframes]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "CLIENT"
